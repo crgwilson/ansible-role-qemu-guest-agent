@@ -1,0 +1,17 @@
+---
+- name: Install qemu-guest-agent system packages
+  package:
+    name: "{{ qemu_guest_agent_packages }}"
+    state: present
+  notify:
+    - restart qemu guest agent
+  tags:
+    - packages
+
+- name: Manage qemu-guest-agent service
+  systemd:
+    name: "{{ qemu_guest_agent_service_name }}"
+    enabled: "{{ qemu_guest_agent_service_enabled }}"
+    state: "{{ qemu_guest_agent_service_state }}"
+  tags:
+    - services

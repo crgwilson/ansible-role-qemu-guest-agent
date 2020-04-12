@@ -1,0 +1,6 @@
+---
+- name: restart qemu guest agent
+  systemd:
+    name: "{{ qemu_guest_agent_service_name }}"
+    state: restarted
+  when: qemu_guest_agent_service_state == 'started'

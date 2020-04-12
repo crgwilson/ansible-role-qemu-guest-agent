@@ -1,0 +1,7 @@
+---
+qemu_guest_agent_packages:
+  - qemu-guest-agent
+
+qemu_guest_agent_service_name: qemu-guest-agent.service
+qemu_guest_agent_service_state: started
+qemu_guest_agent_service_enabled: true
