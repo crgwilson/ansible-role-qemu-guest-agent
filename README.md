@@ -1,5 +1,7 @@
 # Ansible role: qemu-guest-agent
 
+![Molecule Test](https://github.com/crgwilson/ansible-role-qemu-guest-agent/workflows/Molecule%20Test/badge.svg)
+
 Install and manage the [qemu-guest-agent](https://wiki.libvirt.org/page/Qemu_guest_agent)
 
 
